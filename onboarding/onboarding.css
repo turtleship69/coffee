@@ -1,0 +1,150 @@
+p {
+    font-family: 'Coming Soon', 'serif';
+}
+
+p.fancy {
+    font-family: 'Coming Soon', 'Algerian', 'serif';
+}
+
+/* body {
+    display: flex;
+} */
+
+div#welcome-message {
+    display: block;
+    position: relative;
+    margin-top: 15vh;
+    margin-bottom: 10vh;
+}
+
+div#welcome-message>.contents {
+    display: block;
+    position: relative;
+    font-size: xx-large;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ========== username styles ========== */
+.picker-outer {
+    position: relative;
+    display: block;
+    border-radius: 1em;
+    border: 1px solid #000;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20em;
+    min-height: 6em;
+}
+
+.input-div {
+    display: flex;
+    position: relative;
+    background: #D9D9D9;
+    border-radius: 0.5rem;
+    border: 1px solid #000;
+    left: 1em;
+    width: 18em;
+    margin-bottom: 1em;
+    min-height: 3em;
+    height: fit-content;
+}
+
+.question {
+    position: relative;
+    display: block;
+    margin: 0.5em;
+    margin-left: 1em;
+}
+
+#username-man {
+    margin-top: 0.5em;
+    margin-left: 0.1em;
+    /* margin-right: 0.1em; */
+    width: 2em;
+    height: 2em;
+}
+
+input, textarea {
+    background-color: transparent;
+    border-color: transparent;
+    position: relative;
+    width: inherit;
+}
+
+#username:focus {
+    outline: none;
+}
+
+.username-picker.message {
+    margin-left: 1em;
+    display: none;
+}
+
+.username-picker.message.available {
+    color: green;
+}
+
+.username-picker.message.taken {
+    color: red;
+}
+
+p.username-picker {
+    font-size: large;
+}
+
+/* ========== continue button ========== */
+
+#continue-container {
+    margin: auto;
+    margin-top: 1em;
+    width: fit-content;
+}
+
+#continue {
+    text-align: center;
+    vertical-align: middle;
+    background: #4285F4;
+    border-radius: 0.5rem;
+    border: 0px;
+    width: 15em;
+    height: 3em;
+}
+
+#continue:disabled {
+    background: lightgray;
+    color: darkgray;
+}
+
+/* ========== animation ========== */
+
+#username-picker-outer,
+#bio-picker-outer {
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.fade-out {
+    opacity: 0;
+    transform: translateX(-100%);
+}
+
+.fade-in {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* ========== bio styles ========== */
+
+/* #bio-container {
+    margin: auto;
+    width: fit-content;
+} */
+
+#bio-picker-outer {
+    display: none;
+}
+
+#bio {
+    width: 100%;
+}
