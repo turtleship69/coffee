@@ -139,7 +139,7 @@ body {
 #main {
     left: calc(var(--side-menu-width) + var(--chat-list-width) - 1rem + 1px);
     position: fixed;
-    height: 100vh;
+    height: 100%;
 }
 
 #heading, #messageBar {
@@ -241,7 +241,8 @@ div.send#send {
     flex-direction: column;
     flex: 1;
     overflow-y: scroll;
-    height: calc(100vh - calc(var(--current-chat-pfp-size) * 2 + 2rem));
+    height: calc(100% - calc(var(--current-chat-pfp-size) * 2 + 2rem));
+    scrollbar-width: thin;
 }
 
 .group {
@@ -299,7 +300,7 @@ img.group.messages {
     padding-right: 10px;
     padding-top: 5px;
     padding-bottom: 5px;
-    max-width: min(25rem, calc(100vw - var(--side-menu-width) - var(--chat-list-width)));
+    max-width: max(18rem, calc(100vw - var(--side-menu-width) - var(--chat-list-width) - 20rem));
     width: fit-content;
     margin: 0.2rem 0 0 0;
 }
