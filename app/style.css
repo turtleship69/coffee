@@ -9,6 +9,21 @@ body {
     --button-size: 1.7rem;
 }
 
+@media screen and (max-width: 50rem) {
+    #side-menu.side-menu, #conversationlist.conversationlist {
+        display: none;
+    }
+
+    #main.main {
+        left: 0;
+    }
+
+    body {
+        --side-menu-width: 0rem;
+        --chat-list-width: 0rem;
+    }
+}
+
 #side-menu {
     height: 100vh;
     width: var(--side-menu-width);
