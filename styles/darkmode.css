@@ -1,0 +1,29 @@
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #333333;
+    }
+
+    div.post.posts.single {
+        border: 1px solid white;
+    }
+
+    /*make the text blur on long paragraphs work on dark mode*/
+    div.posts.post.content.container::before {
+        background: linear-gradient(transparent 150px, #333333);
+    }
+
+    /*hanko styling*/
+    hanko-auth,
+    hanko-profile {
+        --background-color: transparent;
+        --color: #cccccc;
+    }
+
+    div.input-div {
+        background: #474747;
+    }
+
+    img.bw-icon {
+        filter: invert(100%);
+    }
+}

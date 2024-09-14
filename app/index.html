@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Café</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light dark" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/styles/darkmode.css">
+    <link rel="stylesheet" href="/styles/defaults.css">
+</head>
+
+<body>
+    <div class="side-menu" id="side-menu">
+        <div class="side-menu icon">
+            <a href="#">
+                <img class="side-menu icon bw-icon" src="/public/menu.png" alt="hamburger menu">
+            </a>
+        </div>
+
+        <div class="side-menu icon">
+            <a href="#">
+                <img class="side-menu icon bw-icon" src="/public/chat.png" alt="hamburger menu">
+            </a>
+        </div>
+
+        <div class="side-menu icon end">
+            <div class="side-menu icon">
+                <a href="#">
+                    <img class="side-menu icon bw-icon" src="/public/account.png" alt="hamburger menu">
+                </a>
+            </div>
+            <div class="side-menu icon">
+                <a href="#">
+                    <img class="side-menu icon bw-icon" src="/public/settings.png" alt="hamburger menu">
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="conversationlist" id="conversationlist">
+        <p class="conversationlist title" id="conversationsHeading">
+            Chats
+        </p>
+
+        <div class="conversationlist conversations" id="conversations">
+            <div class="conversationlist conversations conversation parent">
+                <img class="conversationlist conversations conversation pfp bw-icon" src="/public/account.png">
+                <div class="conversationlist conversations conversation text">
+                    <p class="conversationlist conversations conversation name">Alex Jordon</p>
+                    <p class="conversationlist conversations conversation preview">Just finished the report. Do you want
+                        to review it before sending?</p>
+                </div>
+            </div>
+
+            <div class="conversationlist conversations conversation parent">
+                <img class="conversationlist conversations conversation pfp bw-icon" src="/public/account.png">
+                <div class="conversationlist conversations conversation text">
+                    <p class="conversationlist conversations conversation name">Anita Break</p>
+                    <p class="conversationlist conversations conversation preview">Taking a quick coffee break. Want to
+                        join me in the lounge?</p>
+                </div>
+            </div>
+
+            <div class="conversationlist conversations conversation parent">
+                <img class="conversationlist conversations conversation pfp bw-icon" src="/public/account.png">
+                <div class="conversationlist conversations conversation text">
+                    <p class="conversationlist conversations conversation name">Page Turner</p>
+                    <p class="conversationlist conversations conversation preview">Just finished reading that book you
+                        recommended. The ending was wild!</p>
+                </div>
+            </div>
+
+            <div class="conversationlist conversations conversation parent">
+                <img class="conversationlist conversations conversation pfp bw-icon" src="/public/account.png">
+                <div class="conversationlist conversations conversation text">
+                    <p class="conversationlist conversations conversation name">Sandy Shore</p>
+                    <p class="conversationlist conversations conversation preview">The beach was amazing today. You have
+                        to see the sunset photos I took!</p>
+                </div>
+            </div>
+
+            <div class="conversationlist conversations conversation parent">
+                <img class="conversationlist conversations conversation pfp bw-icon" src="/public/account.png">
+                <div class="conversationlist conversations conversation text">
+                    <p class="conversationlist conversations conversation name">Bill Board</p>
+                    <p class="conversationlist conversations conversation preview">Just saw your ad on the highway! It
+                        looks fantastic.</p>
+                </div>
+            </div>
+
+            <div class="conversationlist conversations conversation parent">
+                <img class="conversationlist conversations conversation pfp bw-icon" src="/public/account.png">
+                <div class="conversationlist conversations conversation text">
+                    <p class="conversationlist conversations conversation name">Ray Caster</p>
+                    <p class="conversationlist conversations conversation preview">The weather report says it might rain
+                        later. Better bring an umbrella!</p>
+                </div>
+            </div>
+
+            <div class="conversationlist conversations conversation parent">
+                <img class="conversationlist conversations conversation pfp bw-icon" src="/public/account.png">
+                <div class="conversationlist conversations conversation text">
+                    <p class="conversationlist conversations conversation name">Sue Pervisor</p>
+                    <p class="conversationlist conversations conversation preview">I’ve reviewed your project. Let’s
+                        meet to go over the feedback.</p>
+                </div>
+            </div>
+
+            <div class="conversationlist conversations conversation parent">
+                <img class="conversationlist conversations conversation pfp bw-icon" src="/public/account.png">
+                <div class="conversationlist conversations conversation text">
+                    <p class="conversationlist conversations conversation name">Penelope Script</p>
+                    <p class="conversationlist conversations conversation preview">I've been working on a new story.
+                        Want to read the first chapter?</p>
+                </div>
+            </div>
+
+            <div class="conversationlist conversations conversation parent">
+                <img class="conversationlist conversations conversation pfp bw-icon" src="/public/account.png">
+                <div class="conversationlist conversations conversation text">
+                    <p class="conversationlist conversations conversation name">Lucas Wright</p>
+                    <p class="conversationlist conversations conversation preview">I've been working on a new story.
+                        Want to read the first chapter?</p>
+                </div>
+            </div>
+
+            <div class="conversationlist conversations conversation parent">
+                <img class="conversationlist conversations conversation pfp bw-icon" src="/public/account.png">
+                <div class="conversationlist conversations conversation text">
+                    <p class="conversationlist conversations conversation name">Linus Torvalds</p>
+                    <p class="conversationlist conversations conversation preview">Just debugged that issue. The code
+                        should run smoothly now!</p>
+                </div>
+            </div>
+
+            <div class="conversationlist conversations conversation parent">
+                <img class="conversationlist conversations conversation pfp bw-icon" src="/public/account.png">
+                <div class="conversationlist conversations conversation text">
+                    <p class="conversationlist conversations conversation name">Alex Jordon</p>
+                    <p class="conversationlist conversations conversation preview">Just finished the report. Do you want
+                        to review it before sending?</p>
+                </div>
+            </div>
+            <div class="conversationlist conversations conversation parent">
+                <img class="conversationlist conversations conversation pfp bw-icon" src="/public/account.png">
+                <div class="conversationlist conversations conversation text">
+                    <p class="conversationlist conversations conversation name">Anita Break</p>
+                    <p class="conversationlist conversations conversation preview">Taking a quick coffee break. Want to
+                        join me in the lounge?</p>
+                </div>
+            </div>
+
+            <div class="conversationlist conversations conversation parent">
+                <img class="conversationlist conversations conversation pfp bw-icon" src="/public/account.png">
+                <div class="conversationlist conversations conversation text">
+                    <p class="conversationlist conversations conversation name">Page Turner</p>
+                    <p class="conversationlist conversations conversation preview">Just finished reading that book you
+                        recommended. The ending was wild!</p>
+                </div>
+            </div>
+
+            <div class="conversationlist conversations conversation parent">
+                <img class="conversationlist conversations conversation pfp bw-icon" src="/public/account.png">
+                <div class="conversationlist conversations conversation text">
+                    <p class="conversationlist conversations conversation name">Sandy Shore</p>
+                    <p class="conversationlist conversations conversation preview">The beach was amazing today. You have
+                        to see the sunset photos I took!</p>
+                </div>
+            </div>
+
+            <div class="conversationlist conversations conversation parent">
+                <img class="conversationlist conversations conversation pfp bw-icon" src="/public/account.png">
+                <div class="conversationlist conversations conversation text">
+                    <p class="conversationlist conversations conversation name">Bill Board</p>
+                    <p class="conversationlist conversations conversation preview">Just saw your ad on the highway! It
+                        looks fantastic.</p>
+                </div>
+            </div>
+
+            <div class="conversationlist conversations conversation parent">
+                <img class="conversationlist conversations conversation pfp bw-icon" src="/public/account.png">
+                <div class="conversationlist conversations conversation text">
+                    <p class="conversationlist conversations conversation name">Ray Caster</p>
+                    <p class="conversationlist conversations conversation preview">The weather report says it might rain
+                        later. Better bring an umbrella!</p>
+                </div>
+            </div>
+
+            <div class="conversationlist conversations conversation parent">
+                <img class="conversationlist conversations conversation pfp bw-icon" src="/public/account.png">
+                <div class="conversationlist conversations conversation text">
+                    <p class="conversationlist conversations conversation name">Sue Pervisor</p>
+                    <p class="conversationlist conversations conversation preview">I’ve reviewed your project. Let’s
+                        meet to go over the feedback.</p>
+                </div>
+            </div>
+
+            <div class="conversationlist conversations conversation parent">
+                <img class="conversationlist conversations conversation pfp bw-icon" src="/public/account.png">
+                <div class="conversationlist conversations conversation text">
+                    <p class="conversationlist conversations conversation name">Penelope Script</p>
+                    <p class="conversationlist conversations conversation preview">I've been working on a new story.
+                        Want to read the first chapter?</p>
+                </div>
+            </div>
+
+            <div class="conversationlist conversations conversation parent">
+                <img class="conversationlist conversations conversation pfp bw-icon" src="/public/account.png">
+                <div class="conversationlist conversations conversation text">
+                    <p class="conversationlist conversations conversation name">Lucas Wright</p>
+                    <p class="conversationlist conversations conversation preview">I've been working on a new story.
+                        Want to read the first chapter?</p>
+                </div>
+            </div>
+
+            <div class="conversationlist conversations conversation parent">
+                <img class="conversationlist conversations conversation pfp bw-icon" src="/public/account.png">
+                <div class="conversationlist conversations conversation text">
+                    <p class="conversationlist conversations conversation name">Linus Torvalds</p>
+                    <p class="conversationlist conversations conversation preview">Just debugged that issue. The code
+                        should run smoothly now!</p>
+                </div>
+            </div>
+
+            <div class="conversationlist conversations conversation parent">
+                <img class="conversationlist conversations conversation pfp bw-icon" src="/public/account.png">
+                <div class="conversationlist conversations conversation text">
+                    <p class="conversationlist conversations conversation name">Alex Jordon</p>
+                    <p class="conversationlist conversations conversation preview">Just finished the report. Do you want
+                        to review it before sending?</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="main" id="main">
+        <div class="main topbar" id="heading">
+            <div class="main topbar pfp">
+                <img class="main topbar pfp bw-icon" src="/public/account.png">
+            </div>
+
+            <div class="main topbar name">
+                <p class="main topbar name">
+                    Alex Jordon
+                </p>
+            </div>
+
+            <div class="main topbar search">
+                <img class="main topbar search bw-icon button-img" src="/public/search.png">
+            </div>
+        </div>
+
+        <div class="main chat" id="texts">
+            <div class="main chat group time parent">
+                <p class="main chat group time">22 May 2024, 21:12</p>
+            </div>
+
+            <div class="main chat group sent messages parent">
+                <img class="main chat group sent messages pfp bw-icon" src="/public/account.png">
+                <div class="main chat group sent messages texts">
+                    <p class="main chat group sent messages message">Morning, Alex! Did you get the chance to check out
+                        the design mockups I sent over last night?</p>
+                </div>
+            </div>
+
+            <div class="main chat group received messages parent">
+                <img class="main chat group received messages pfp bw-icon" src="/public/account.png">
+                <div class="main chat group received messages texts">
+                    <p class="main chat group received messages message">Good morning!</p>
+                    <p class="main chat group received messages message">Yes, I did. The layouts look clean and the
+                        color scheme is spot on.</p>
+                    <p class="main chat group received messages message">I especially liked the dashboard design. Did
+                        you create that from scratch?</p>
+                </div>
+            </div>
+
+            <!-- User's message -->
+            <div class="main chat group sent messages parent">
+                <img class="main chat group sent messages pfp bw-icon" src="/public/account.png">
+                <div class="main chat group sent messages texts">
+                    <p class="main chat group sent messages message">Thanks! Yeah, I started from a template but ended
+                        up customizing most of it. I’m glad you liked it!</p>
+                </div>
+            </div>
+
+            <!-- Alex's message -->
+            <div class="main chat group received messages parent">
+                <img class="main chat group received messages pfp bw-icon" src="/public/account.png">
+                <div class="main chat group received messages texts">
+                    <p class="main chat group received messages message">Definitely. I think it’ll work well for the
+                        presentation.</p>
+                </div>
+            </div>
+
+            <!-- User's message -->
+            <div class="main chat group sent messages parent">
+                <img class="main chat group sent messages pfp bw-icon" src="/public/account.png">
+                <div class="main chat group sent messages texts">
+                    <p class="main chat group sent messages message">I’m also thinking about adding a section on user
+                        feedback. What do you think?</p>
+                </div>
+            </div>
+
+            <!-- Alex's message -->
+            <div class="main chat group received messages parent">
+                <img class="main chat group received messages pfp bw-icon" src="/public/account.png">
+                <div class="main chat group received messages texts">
+                    <p class="main chat group received messages message">That’s a great idea. It’ll make the report more
+                        comprehensive.</p>
+                    <p class="main chat group received messages message">By the way, here’s a quick screenshot of the
+                        latest data analysis I ran this morning.</p>
+                    <img class="main chat group received messages image" src="/public/placeholder.png"
+                        alt="Data chart image">
+                </div>
+            </div>
+
+            <!-- User's message -->
+            <div class="main chat group sent messages parent">
+                <img class="main chat group sent messages pfp bw-icon" src="/public/account.png">
+                <div class="main chat group sent messages texts">
+                    <p class="main chat group sent messages message">The analysis looks solid. It really highlights the
+                        key trends.</p>
+                </div>
+            </div>
+
+            <!-- Alex's message -->
+            <div class="main chat group received messages parent">
+                <img class="main chat group received messages pfp bw-icon" src="/public/account.png">
+                <div class="main chat group received messages texts">
+                    <p class="main chat group received messages message">Glad you think so. I’ll incorporate this into
+                        the final report. Anything else you think we should include?</p>
+                </div>
+            </div>
+
+            <!-- User's message -->
+            <div class="main chat group sent messages parent">
+                <img class="main chat group sent messages pfp bw-icon" src="/public/account.png">
+                <div class="main chat group sent messages texts">
+                    <p class="main chat group sent messages message">Maybe just a brief summary of the key findings at
+                        the end. That should tie everything together nicely.</p>
+                </div>
+            </div>
+
+            <!-- Alex's message -->
+            <div class="main chat group received messages parent">
+                <img class="main chat group received messages pfp bw-icon" src="/public/account.png">
+                <div class="main chat group received messages texts">
+                    <p class="main chat group received messages message">Good point. I’ll add that in.</p>
+                </div>
+            </div>
+
+            <!-- User's message -->
+            <div class="main chat group sent messages parent">
+                <img class="main chat group sent messages pfp bw-icon" src="/public/account.png">
+                <div class="main chat group sent messages texts">
+                    <p class="main chat group sent messages message">Perfect. How much more do you have left?</p>
+                </div>
+            </div>
+
+            <!-- Alex's message -->
+            <div class="main chat group received messages parent">
+                <img class="main chat group received messages pfp bw-icon" src="/public/account.png">
+                <div class="main chat group received messages texts">
+                    <p class="main chat group received messages message">I’m almost done. Just need to fine-tune a few
+                        things.</p>
+                </div>
+            </div>
+
+            <div class="main chat group time parent">
+                <p class="main chat group time">6 Jun 2024, 17:52</p>
+            </div>
+
+            <!-- User's message -->
+            <div class="main chat group sent messages parent">
+                <img class="main chat group sent messages pfp bw-icon" src="/public/account.png">
+                <div class="main chat group sent messages texts">
+                    <p class="main chat group sent messages message">Hey Alex, how's everything going with the project?
+                    </p>
+                </div>
+            </div>
+
+            <!-- Alex's message -->
+            <div class="main chat group received messages parent">
+                <img class="main chat group received messages pfp bw-icon" src="/public/account.png">
+                <div class="main chat group received messages texts">
+                    <p class="main chat group received messages message">Hey! It’s been a busy day, but I'm making good
+                        progress.</p>
+                </div>
+            </div>
+
+            <!-- User's message -->
+            <div class="main chat group sent messages parent">
+                <img class="main chat group sent messages pfp bw-icon" src="/public/account.png">
+                <div class="main chat group sent messages texts">
+                    <p class="main chat group sent messages message">That’s great to hear. Did you manage to get the
+                        data from the client?</p>
+                </div>
+            </div>
+
+            <!-- Alex's message -->
+            <div class="main chat group received messages parent">
+                <img class="main chat group received messages pfp bw-icon" src="/public/account.png">
+                <div class="main chat group received messages texts">
+                    <p class="main chat group received messages message">Yes, I received it this morning. It was a bit
+                        messy, but I cleaned it up and integrated it into the report.</p>
+                </div>
+            </div>
+
+            <!-- User's message -->
+            <div class="main chat group sent messages parent">
+                <img class="main chat group sent messages pfp bw-icon" src="/public/account.png">
+                <div class="main chat group sent messages texts">
+                    <p class="main chat group sent messages message">Awesome! Do you need any help with the analysis?
+                    </p>
+                </div>
+            </div>
+
+            <!-- Alex's message -->
+            <div class="main chat group received messages parent">
+                <img class="main chat group received messages pfp bw-icon" src="/public/account.png">
+                <div class="main chat group received messages texts">
+                    <p class="main chat group received messages message">Thanks for the offer, but I think I've got it
+                        covered. I’m almost done with everything.</p>
+                </div>
+            </div>
+
+            <!-- User's message -->
+            <div class="main chat group sent messages parent">
+                <img class="main chat group sent messages pfp bw-icon" src="/public/account.png">
+                <div class="main chat group sent messages texts">
+                    <p class="main chat group sent messages message">Sounds good. When do you think it’ll be ready?</p>
+                </div>
+            </div>
+
+            <!-- Alex's message -->
+            <div class="main chat group received messages parent">
+                <img class="main chat group received messages pfp bw-icon" src="/public/account.png">
+                <div class="main chat group received messages texts">
+                    <p class="main chat group received messages message">Actually, I just finished the report. Do you
+                        want to review it before sending?</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="main messageBar" id="messageBar">
+            <div class="main messageBar emoji" id="emoji">
+                <img class="main messageBar emoji bw-icon button-img" src="/public/emoji.png" alt="emoji picker">
+            </div>
+
+            <div class="main messageBar messageBox" id="message">
+                <input class="main messageBar messageBox">
+            </div>
+
+            <div class="main messageBar send" id="send">
+                <img class="main messageBar send bw-icon button-img" src="/public/send.png" alt="send message">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

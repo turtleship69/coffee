@@ -1,0 +1,322 @@
+body {
+    margin: 0;
+
+    --side-menu-width: 3rem;
+    --chat-list-width: 25rem;
+    --chat-list-pfp-size: 3.3rem;
+    --current-chat-pfp-size: 3rem;
+    --in-chat-pfp-size: 2rem;
+    --button-size: 1.7rem;
+}
+
+#side-menu {
+    height: 100vh;
+    width: var(--side-menu-width);
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    border-right: 1px solid;
+}
+
+.side-menu.icon {
+    width: calc(var(--side-menu-width) * 0.7);
+    height: auto;
+    position: relative;
+    /* margin-bottom: 0.3rem; */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.side-menu.icon.end {
+    position: absolute;
+    width: var(--side-menu-width);
+    bottom: 0.3rem; /* Pushes the element to the bottom */
+}
+
+/* ===================================================== */
+.button-img:hover {
+    background-color: gray;
+    padding: 25%;
+    left: -25%;
+    top: -25%;
+    position: relative;
+    border-radius: 25%;
+}
+
+/* ===================================================== */
+#conversationlist {
+    border-right: 1px solid;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    position: fixed;
+    height: 100vh;
+    width: calc(var(--chat-list-width) - 2rem);
+    left: var(--side-menu-width);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+#conversationsHeading {
+    font-size: xx-large;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    /* margin-left: 1rem; */
+}
+
+#conversations {
+    flex: 1; /* This will make the #chats element take up remaining vertical space */
+    overflow-y: auto; /* This will make the #chats element scrollable vertically */
+    box-sizing: content-box; /* Add this line */
+    padding-right: 20px; /* Add this line */
+    scrollbar-width: thin;
+}
+
+
+.conversation.parent {
+    margin-right: 0.1rem;
+    margin-bottom: 0.75rem;
+    font-size: medium;
+    display: flex;
+    border-radius: 5px;
+    /* border: 1px solid blue; */
+
+    /* padding-right: 20px; Add this line */
+    /* overflow: hidden; */
+    /* text-overflow: ellipsis; */
+}
+
+.conversation.parent:hover {
+    background-color: grey;
+}
+
+.conversation.text {
+    margin-left: 0.6rem;
+    width: fit-content;
+}
+
+.conversation.text p {
+    margin-top: 2px;
+    margin-bottom: 2px;
+    overflow: hidden;
+    height: 1.4em;
+    /* width: max-content; */
+    width: calc(var(--chat-list-width) - var(--chat-list-pfp-size) - 4.7rem);
+}
+
+.conversation.text p.name {
+    font-weight: bold;
+}
+
+.conversation.text p.preview {
+    overflow: hidden;    
+    text-overflow: ellipsis;
+    word-break: normal;
+    white-space: nowrap;
+}
+
+.conversation.pfp {
+    width: var(--chat-list-pfp-size);
+    height: var(--chat-list-pfp-size);
+}
+
+/* ===================================================== */
+#main {
+    left: calc(var(--side-menu-width) + var(--chat-list-width) - 1rem + 1px);
+    position: fixed;
+    height: 100vh;
+}
+
+#heading, #messageBar {
+    border: 2px solid rgba(128, 128, 128, 0.5);
+    box-sizing: border-box;
+    width: calc(100vw - var(--side-menu-width) - var(--chat-list-width) + 1rem - 1px);
+    height: calc(var(--current-chat-pfp-size) + 1rem);
+    display: flex;
+}
+
+.topbar div {
+    top: 50%;
+    transform: translateY(-50%);
+    position: relative;
+}
+
+.topbar.pfp {
+    width: var(--current-chat-pfp-size);
+    height: var(--current-chat-pfp-size);
+}
+
+div.topbar.pfp {
+    left: 0.3rem;
+}
+
+.topbar.name {
+    position: relative;
+}
+
+p.topbar.name {
+    transform: translateY(10%);
+    left: 0.9rem;
+}
+
+.topbar.search {
+    width: var(--button-size);
+    height: var(--button-size);
+}
+
+div.topbar.search {
+    right: 1rem;
+    top: 2rem;
+    position: absolute;
+    justify-self: right;
+}
+
+/* ===================================================== */
+#messageBar {
+    bottom: 0;
+    position: absolute;
+}
+
+.emoji, .send {
+    width: var(--button-size);
+    height: var(--button-size);
+}
+
+div.emoji {
+    left: 0.7rem;
+}
+
+
+#messageBar div {
+    top: 50%;
+    transform: translateY(-50%);
+    position: relative;
+}
+
+div.messageBox {
+    height: min-content;
+    left: 1.3rem;
+    width: calc(100% - calc(4 * var(--button-size)));
+}
+
+input.messageBox {
+    width: 100%;
+    border: transparent;
+    background-color: transparent;
+}
+
+input.messageBox:hover {
+    border: 1px solid rgba(128, 128, 128, 0.9); 
+    background-color: rgba(128, 128, 128, 0.1); 
+}
+
+input.messageBox:focus, input.messageBox:focus-visible {
+    border: 1px solid rgba(128, 128, 128, 0.9); 
+}
+
+div.send#send {
+    right: 0.7rem;
+    position: absolute;
+}
+
+/* ===================================================== */
+#texts {
+    /* position: relative; */
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    overflow-y: scroll;
+    height: calc(100vh - calc(var(--current-chat-pfp-size) * 2 + 2rem));
+}
+
+.group {
+    position: relative;
+    /* border: rebeccapurple solid 2px; */
+    margin: auto;
+}
+
+div.group {
+    /* margin-top: 0.8rem; */
+    width: fit-content;
+}
+
+.group.messages.parent {
+    display: flex;
+}
+
+.chat.group.pfp {
+    width: var(--in-chat-pfp-size);
+    height: var(--in-chat-pfp-size);
+}
+
+div.messages {
+    position: relative;
+}
+
+div.chat.group.texts {
+    margin-left: 0.3rem;
+    margin-right: 0.3rem;
+}
+
+div.chat.group.sent.parent {
+    margin-right: 1rem;
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+    flex-direction: row-reverse;
+}
+
+div.chat.group.received.parent {
+    margin-left: 1rem;
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+}
+
+img.group.messages {
+    bottom: 0;
+    margin-bottom: 0;
+    position: relative;
+}
+
+.texts .group.messages {
+    /* left: 0.2rem; */
+    border-radius: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    max-width: min(25rem, calc(100vw - var(--side-menu-width) - var(--chat-list-width)));
+    width: fit-content;
+    margin: 0.2rem 0 0 0;
+}
+
+p.group.messages.sent {
+    background-color: rebeccapurple;
+}
+img.group.messages.sent.image {
+    padding: 7px;
+    background-color: rebeccapurple;
+}
+
+p.group.messages.received {
+    background-color: hotpink;
+}
+img.group.messages.received.image {
+    padding: 7px;
+    background-color: hotpink;
+}
+
+
+.texts {
+    flex-direction: column;
+    justify-content: left;
+}
+
+.messages.image {
+    width: 15rem;
+    height: 15rem;
+    border-radius: 1rem;
+}
+
+div.main.chat.group.received.parent:last-child {
+    margin-bottom: 0.6rem;
+}
