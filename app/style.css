@@ -61,11 +61,9 @@ body {
 /* ===================================================== */
 #conversationlist {
     border-right: 1px solid;
-    margin-left: 1rem;
-    margin-right: 1rem;
     position: fixed;
     height: 100vh;
-    width: calc(var(--chat-list-width) - 2rem);
+    width: var(--chat-list-width);
     left: var(--side-menu-width);
     display: flex;
     flex-direction: column;
@@ -76,7 +74,7 @@ body {
     font-size: xx-large;
     margin-top: 1rem;
     margin-bottom: 1rem;
-    /* margin-left: 1rem; */
+    margin-left: 1.5rem;
 }
 
 #conversations {
@@ -85,20 +83,17 @@ body {
     box-sizing: content-box; /* Add this line */
     padding-right: 20px; /* Add this line */
     scrollbar-width: thin;
+    margin-left: 0.7rem;
+    width: calc(var(--chat-list-width) - 1.5rem);
 }
 
 
 .conversation.parent {
-    margin-right: 0.1rem;
     margin-bottom: 0.75rem;
     font-size: medium;
     display: flex;
     border-radius: 5px;
-    /* border: 1px solid blue; */
-
-    /* padding-right: 20px; Add this line */
-    /* overflow: hidden; */
-    /* text-overflow: ellipsis; */
+    width: fit-content;
 }
 
 .conversation.parent:hover {
@@ -115,8 +110,7 @@ body {
     margin-bottom: 2px;
     overflow: hidden;
     height: 1.4em;
-    /* width: max-content; */
-    width: calc(var(--chat-list-width) - var(--chat-list-pfp-size) - 4.7rem);
+    width: calc(var(--chat-list-width) - var(--chat-list-pfp-size) - 2.5rem);
 }
 
 .conversation.text p.name {
@@ -137,15 +131,16 @@ body {
 
 /* ===================================================== */
 #main {
-    left: calc(var(--side-menu-width) + var(--chat-list-width) - 1rem + 1px);
+    left: calc(var(--side-menu-width) + var(--chat-list-width) + 1px);
     position: fixed;
     height: 100%;
+    width: calc(100vw - var(--side-menu-width) - var(--chat-list-width));
 }
 
 #heading, #messageBar {
     border: 2px solid rgba(128, 128, 128, 0.5);
     box-sizing: border-box;
-    width: calc(100vw - var(--side-menu-width) - var(--chat-list-width) + 1rem - 1px);
+    width: calc(100%);
     height: calc(var(--current-chat-pfp-size) + 1rem);
     display: flex;
 }
