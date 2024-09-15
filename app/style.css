@@ -81,10 +81,8 @@ body {
     flex: 1; /* This will make the #chats element take up remaining vertical space */
     overflow-y: auto; /* This will make the #chats element scrollable vertically */
     box-sizing: content-box; /* Add this line */
-    padding-right: 20px; /* Add this line */
     scrollbar-width: thin;
     margin-left: 0.7rem;
-    width: calc(var(--chat-list-width) - 1.5rem);
 }
 
 
