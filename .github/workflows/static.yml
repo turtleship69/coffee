@@ -34,7 +34,8 @@ jobs:
       - name: Convert links
         # shell: bash
         run: |
-          find . -type f -name '*.html' -exec sed -i -e 's|src="/|src="/coffee/|g; s|href="/|href="/coffee/|g; s|url(/|url(/coffee/|g' {} +
+          find . -type f -name '*.html' -exec sed -i -e 's|src="/|src="/coffee/|g; s|href="/|href="/coffee/|g' {} +
+          find . -type f -name '*.css' -exec sed -i -e 's|url(/|url(/coffee/|g' {} +
           find . -type f -name '*.html' -exec sh -c 'echo "{}: $(grep -o "coffee" {} | wc -l) changes"' \;
       - name: Setup Pages
         uses: actions/configure-pages@v3
