@@ -2,15 +2,16 @@
 <html>
 
 <head>
+    <title>Café</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Café</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="color-scheme" content="light dark" />
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="/styles/darkmode.css">
     <link rel="stylesheet" href="/styles/defaults.css">
+    <script type="module" src="https://cdn.jsdelivr.net/npm/emoji-picker-element@^1/index.js"></script>
 </head>
 
 <body>
@@ -454,6 +455,10 @@
                 <img class="main messageBar emoji bw-icon button-img" src="/public/emoji.png" alt="emoji picker">
             </div>
 
+            <div class="tooltip" id="emoji-picker" role="tooltip">
+                <emoji-picker></emoji-picker>
+            </div>
+
             <div class="main messageBar messageBox" id="message">
                 <input class="main messageBar messageBox">
             </div>
@@ -463,6 +468,8 @@
             </div>
         </div>
     </div>
+
+    <script src="emoji.js" type="module"></script>
 </body>
 
 </html>

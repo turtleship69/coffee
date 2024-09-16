@@ -194,6 +194,15 @@ div.emoji {
     left: 0.7rem;
 }
 
+div.tooltip#emoji-picker {
+    position: absolute;
+    top: -12rem;
+    left: 3rem;
+}
+
+#emoji-picker:not(.shown) {
+    display: none;
+}
 
 #messageBar div {
     top: 50%;
