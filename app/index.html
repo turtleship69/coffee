@@ -12,10 +12,12 @@
     <link rel="stylesheet" href="/styles/darkmode.css">
     <link rel="stylesheet" href="/styles/defaults.css">
     <script type="module" src="https://cdn.jsdelivr.net/npm/emoji-picker-element@^1/index.js"></script>
+    <script src="emoji.js" type="module"></script>
+    <script src="navigation.js" defer></script>
 </head>
 
 <body>
-    <div class="side-menu" id="side-menu">
+    <div class="side-menu hide" id="side-menu">
         <div class="side-menu icon">
             <a href="#">
                 <img class="side-menu icon bw-icon" src="/public/menu.png" alt="hamburger menu">
@@ -43,7 +45,7 @@
 
     </div>
 
-    <div class="conversationlist" id="conversationlist">
+    <div class="conversationlist hide" id="conversationlist">
         <p class="conversationlist title" id="conversationsHeading">
             Chats
         </p>
@@ -242,6 +244,10 @@
 
     <div class="main" id="main">
         <div class="main topbar" id="heading">
+            <div class="main topbar back" id="back">
+                <img class="main topbar back bw-icon" src="/public/back.png">
+            </div>
+
             <div class="main topbar pfp">
                 <img class="main topbar pfp bw-icon" src="/public/account.png">
             </div>
@@ -469,7 +475,5 @@
         </div>
     </div>
 
-    <script src="emoji.js" type="module"></script>
 </body>
-
 </html>

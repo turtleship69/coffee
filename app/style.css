@@ -10,17 +10,30 @@ body {
 }
 
 @media screen and (max-width: 50rem) {
-    #side-menu.side-menu, #conversationlist.conversationlist {
+    #side-menu.side-menu, #conversationlist.conversationlist.hide, #main.main.hide {
         display: none;
     }
-
+    
     #main.main {
         left: 0;
+        width: 100vw;
     }
 
     body {
+        --chat-list-width: 100vw;
         --side-menu-width: 0rem;
-        --chat-list-width: 0rem;
+    }
+    
+    .topbar.back {
+        width: calc(var(--current-chat-pfp-size) * 0.7);
+        height: calc(var(--current-chat-pfp-size) * 0.7);
+    }
+    
+    #back {
+        display: block;
+        left: 0.5rem;
+        padding-left: calc(var(--current-chat-pfp-size) * 0.25);
+        padding-right: -calc(var(--current-chat-pfp-size) * 0.25);
     }
 }
 
@@ -149,13 +162,17 @@ body {
     position: relative;
 }
 
+div.topbar.back {
+    display: none;
+}
+
 .topbar.pfp {
     width: var(--current-chat-pfp-size);
     height: var(--current-chat-pfp-size);
 }
 
 div.topbar.pfp {
-    left: 0.3rem;
+    left: 0.5rem;
 }
 
 .topbar.name {
@@ -289,7 +306,7 @@ div.chat.group.received.parent {
     margin-bottom: 0.2rem;
 }
 
-img.group.messages {
+img.main.chat.group.messages.images {
     bottom: 0;
     margin-bottom: 0;
     position: relative;
