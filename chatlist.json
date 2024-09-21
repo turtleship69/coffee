@@ -1,0 +1,123 @@
+[
+    {
+      "name": "Alex Jordon",
+      "pfp": "/public/account.png",
+      "chatId": "b8fc2366-c097-440e-aedf-97428b480193",
+      "lastChat": [
+        {
+          "sender": "Alex",
+          "message": "Just finished the report. Do you want to review it before sending?",
+          "time": 1609459200
+        }
+      ]
+    },
+    {
+      "name": "Anita Break",
+      "pfp": "/public/account.png",
+      "chatId": "5f1cf8e1-62ad-49ab-aa84-5ab3878f4dc4",
+      "lastChat": [
+        {
+          "sender": null,
+          "message": "Taking a quick coffee break. Want to join me in the lounge?",
+          "time": 1609462800
+        }
+      ]
+    },
+    {
+      "name": "Page Turner",
+      "pfp": "/public/account.png",
+      "chatId": "41fea730-963d-4722-a39b-ba7d1ea35bad",
+      "lastChat": [
+        {
+          "sender": null,
+          "message": "Just finished reading that book you recommended. The ending was wild!",
+          "time": 1609466400
+        }
+      ]
+    },
+    {
+      "name": "Sandy Shore",
+      "pfp": "/public/account.png",
+      "chatId": "e6151e49-35b4-4c3e-9ead-f008be7a305f",
+      "lastChat": [
+        {
+          "sender": "Sandy",
+          "message": "The beach was amazing today. You have to see the sunset photos I took!",
+          "time": 1609470000
+        }
+      ]
+    },
+    {
+      "name": "Bill Board",
+      "pfp": "/public/account.png",
+      "chatId": "a649bd81-ffb4-4793-a764-6f4a8fbe2dd4",
+      "lastChat": [
+        {
+          "sender": null,
+          "message": "Just saw your ad on the highway! It looks fantastic.",
+          "time": 1609473600
+        }
+      ]
+    },
+    {
+      "name": "Ray Caster",
+      "pfp": "/public/account.png",
+      "chatId": "4ea24439-b8ce-4d36-972a-8ef5ea7ed83c",
+      "lastChat": [
+        {
+          "sender": "Ray",
+          "message": "The weather report says it might rain later. Better bring an umbrella!",
+          "time": 1609477200
+        }
+      ]
+    },
+    {
+      "name": "Sue Pervisor",
+      "pfp": "/public/account.png",
+      "chatId": "fb8671fc-33f5-4b84-8fa4-4d70598aef3e",
+      "lastChat": [
+        {
+          "sender": "Sue",
+          "message": "I’ve reviewed your project. Let’s meet to go over the feedback.",
+          "time": 1609480800
+        }
+      ]
+    },
+    {
+      "name": "Penelope Script",
+      "pfp": "/public/account.png",
+      "chatId": "215af57d-61a7-4e55-83d4-4e7d7be6f90c",
+      "lastChat": [
+        {
+          "sender": "Penelope",
+          "message": "I've been working on a new story. Want to read the first chapter?",
+          "time": 1609484400
+        }
+      ]
+    },
+    {
+      "name": "Lucas Wright",
+      "pfp": "/public/account.png",
+      "chatId": "a2d025da-f9da-4a08-abd1-f949035b9857",
+      "lastChat": [
+        {
+          "sender": null,
+          "message": "I've been working on a new story. Want to read the first chapter?",
+          "time": 1609488000
+        }
+      ]
+    },
+    {
+      "name": "Linus Torvalds",
+      "pfp": "/public/account.png",
+      "chatId": "84a85814-71ed-4d4d-9049-f94eed10f749",
+      "lastChat": [
+        {
+          "sender": "Linus",
+          "message": "Just debugged that issue. The code should run smoothly now!",
+          "time": 1609491600
+        }
+      ]
+    }
+  ]
+  
