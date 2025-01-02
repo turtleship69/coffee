@@ -1,0 +1,42 @@
+[
+    {
+        "sender": null,
+        "message": "Hey Ray, what’s the forecast looking like today?",
+        "time": 1716812320
+    },
+    {
+        "sender": "Ray",
+        "message": "It’s sunny for now, but there might be a shift later.",
+        "time": 1716815920
+    },
+    {
+        "sender": null,
+        "message": "Should I plan for rain or stick with my picnic plans?",
+        "time": 1716819520
+    },
+    {
+        "sender": "Ray",
+        "message": "The weather report says it might rain later. Better bring an umbrella!",
+        "time": 1716823120
+    },
+    {
+        "sender": null,
+        "message": "Ray, do you think it’s safe to schedule an outdoor meeting today?",
+        "time": 1717812320
+    },
+    {
+        "sender": "Ray",
+        "message": "I’d be cautious. Looks like there’s a chance of rain this afternoon.",
+        "time": 1717815920
+    },
+    {
+        "sender": null,
+        "message": "Thanks for the heads-up. I’ll let the team know.",
+        "time": 1717819520
+    },
+    {
+        "sender": "Ray",
+        "message": "The weather report says it might rain later. Better bring an umbrella!",
+        "time": 1717823120
+    }
+]

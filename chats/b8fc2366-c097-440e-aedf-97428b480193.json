@@ -1,0 +1,122 @@
+[
+    {
+        "sender": null,
+        "message": "Morning, Alex! Did you get the chance to check out the design mockups I sent over last night?",
+        "time": 1716412320
+    },
+    {
+        "sender": "Alex",
+        "message": "Good morning!",
+        "time": 1716412620
+    },
+    {
+        "sender": "Alex",
+        "message": "Yes, I did. The layouts look clean and the color scheme is spot on.",
+        "time": 1716412620
+    },
+    {
+        "sender": "Alex",
+        "message": "I especially liked the dashboard design. Did you create that from scratch?",
+        "time": 1716412680
+    },
+    {
+        "sender": null,
+        "message": "Thanks! Yeah, I started from a template but ended up customizing most of it. I’m glad you liked it!",
+        "time": 1716412920
+    },
+    {
+        "sender": "Alex",
+        "message": "Definitely. I think it’ll work well for the presentation.",
+        "time": 1716412980
+    },
+    {
+        "sender": null,
+        "message": "I’m also thinking about adding a section on user feedback. What do you think?",
+        "time": 1716413220
+    },
+    {
+        "sender": "Alex",
+        "message": "That’s a great idea. It’ll make the report more comprehensive.",
+        "time": 1716413280
+    },
+    {
+        "sender": "Alex",
+        "message": "By the way, here’s a quick screenshot of the latest data analysis I ran this morning.",
+        "time": 1716413340
+    },
+    {
+        "sender": "Alex",
+        "mediaId": "placeholder",
+        "time": 1716413400
+    },
+    {
+        "sender": null,
+        "message": "The analysis looks solid. It really highlights the key trends.",
+        "time": 1716413580
+    },
+    {
+        "sender": "Alex",
+        "message": "Glad you think so. I’ll incorporate this into the final report. Anything else you think we should include?",
+        "time": 1716413700
+    },
+    {
+        "sender": null,
+        "message": "Maybe just a brief summary of the key findings at the end. That should tie everything together nicely.",
+        "time": 1716413820
+    },
+    {
+        "sender": "Alex",
+        "message": "Good point. I’ll add that in.",
+        "time": 1716414000
+    },
+    {
+        "sender": null,
+        "message": "Perfect. How much more do you have left?",
+        "time": 1716414180
+    },
+    {
+        "sender": "Alex",
+        "message": "I’m almost done. Just need to fine-tune a few things.",
+        "time": 1716414300
+    },
+    {
+        "sender": null,
+        "message": "Hey Alex, how's everything going with the project?",
+        "time": 1717693920
+    },
+    {
+        "sender": "Alex",
+        "message": "Hey! It’s been a busy day, but I'm making good progress.",
+        "time": 1717694220
+    },
+    {
+        "sender": null,
+        "message": "That’s great to hear. Did you manage to get the data from the client?",
+        "time": 1717694400
+    },
+    {
+        "sender": "Alex",
+        "message": "Yes, I received it this morning. It was a bit messy, but I cleaned it up and integrated it into the report.",
+        "time": 1717694580
+    },
+    {
+        "sender": null,
+        "message": "Awesome! Do you need any help with the analysis?",
+        "time": 1717694700
+    },
+    {
+        "sender": "Alex",
+        "message": "Thanks for the offer, but I think I've got it covered. I’m almost done with everything.",
+        "time": 1717694820
+    },
+    {
+        "sender": null,
+        "message": "Sounds good. When do you think it’ll be ready?",
+        "time": 1717695000
+    },
+    {
+        "sender": "Alex",
+        "message": "Actually, I just finished the report. Do you want to review it before sending?",
+        "time": 1717695180
+    }
+]

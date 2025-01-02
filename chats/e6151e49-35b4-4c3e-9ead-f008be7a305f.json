@@ -1,0 +1,42 @@
+[
+    {
+        "sender": null,
+        "message": "Hey Sandy, how was your day at the beach?",
+        "time": 1716612320
+    },
+    {
+        "sender": "Sandy",
+        "message": "It was perfect! The weather couldn’t have been better.",
+        "time": 1716615920
+    },
+    {
+        "sender": null,
+        "message": "Sounds great! Did you manage to catch the sunset?",
+        "time": 1716619520
+    },
+    {
+        "sender": "Sandy",
+        "message": "The beach was amazing today. You have to see the sunset photos I took!",
+        "time": 1716623120
+    },
+    {
+        "sender": null,
+        "message": "Sandy, did you make it back in time for dinner?",
+        "time": 1717612320
+    },
+    {
+        "sender": "Sandy",
+        "message": "Just barely! Traffic was a bit crazy, but it was worth it.",
+        "time": 1717615920
+    },
+    {
+        "sender": null,
+        "message": "Glad to hear it. Did you enjoy the view?",
+        "time": 1717619520
+    },
+    {
+        "sender": "Sandy",
+        "message": "The beach was amazing today. You have to see the sunset photos I took!",
+        "time": 1717623120
+    }
+]

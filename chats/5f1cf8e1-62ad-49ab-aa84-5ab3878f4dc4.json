@@ -1,0 +1,42 @@
+[
+    {
+        "sender": null,
+        "message": "Morning, Anita! Are you still on track for the meeting later today?",
+        "time": 1716412320
+    },
+    {
+        "sender": "Anita Break",
+        "message": "Yep, just need to finalize a few slides. How about you?",
+        "time": 1716415920
+    },
+    {
+        "sender": null,
+        "message": "Good to go! I'll meet you in the conference room at 2 PM.",
+        "time": 1716419520
+    },
+    {
+        "sender": "Anita Break",
+        "message": "Perfect. Taking a quick coffee break. Want to join me in the lounge?",
+        "time": 1716423120
+    },
+    {
+        "sender": null,
+        "message": "Hey Anita, did you manage to fix that bug in the code yesterday?",
+        "time": 1717412320
+    },
+    {
+        "sender": "Anita Break",
+        "message": "Not yet, but I’m almost there. I just need a fresh perspective.",
+        "time": 1717415920
+    },
+    {
+        "sender": null,
+        "message": "Want me to take a look? Sometimes a second pair of eyes helps.",
+        "time": 1717419520
+    },
+    {
+        "sender": "Anita Break",
+        "message": "Thanks for the offer! Taking a quick coffee break. Want to join me in the lounge?",
+        "time": 1717423120
+    }
+]

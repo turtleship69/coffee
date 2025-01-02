@@ -1,0 +1,42 @@
+[
+    {
+        "sender": null,
+        "message": "Hi Penelope, any new writing projects in the works?",
+        "time": 1717012320
+    },
+    {
+        "sender": "Penelope",
+        "message": "Actually, yes! I’ve been brainstorming a new idea this week.",
+        "time": 1717015920
+    },
+    {
+        "sender": null,
+        "message": "That’s exciting! What’s it about?",
+        "time": 1717019520
+    },
+    {
+        "sender": "Penelope",
+        "message": "I’ve been working on a new story. Want to read the first chapter?",
+        "time": 1717023120
+    },
+    {
+        "sender": null,
+        "message": "Penelope, how’s that story coming along? Any updates?",
+        "time": 1718012320
+    },
+    {
+        "sender": "Penelope",
+        "message": "It’s shaping up nicely. I’ve added some new twists!",
+        "time": 1718015920
+    },
+    {
+        "sender": null,
+        "message": "Can’t wait to hear about it. Let me know when there’s something to review.",
+        "time": 1718019520
+    },
+    {
+        "sender": "Penelope",
+        "message": "I’ve been working on a new story. Want to read the first chapter?",
+        "time": 1718023120
+    }
+]

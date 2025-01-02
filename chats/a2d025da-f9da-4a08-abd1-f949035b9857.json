@@ -1,0 +1,42 @@
+[
+    {
+        "sender": null,
+        "message": "Hey Lucas, are you working on any new writing projects?",
+        "time": 1717112320
+    },
+    {
+        "sender": "Lucas",
+        "message": "Actually, yes! I just started drafting something new this week.",
+        "time": 1717115920
+    },
+    {
+        "sender": null,
+        "message": "That’s great to hear! What’s it about?",
+        "time": 1717119520
+    },
+    {
+        "sender": "Lucas",
+        "message": "I’ve been working on a new story. Want to read the first chapter?",
+        "time": 1717123120
+    },
+    {
+        "sender": null,
+        "message": "Lucas, how’s the writing coming along? Any sneak peeks?",
+        "time": 1718112320
+    },
+    {
+        "sender": "Lucas",
+        "message": "It’s going well. I think you’ll like the direction it’s taking!",
+        "time": 1718115920
+    },
+    {
+        "sender": null,
+        "message": "Looking forward to it. Let me know when you’re ready to share.",
+        "time": 1718119520
+    },
+    {
+        "sender": "Lucas",
+        "message": "I’ve been working on a new story. Want to read the first chapter?",
+        "time": 1718123120
+    }
+]
