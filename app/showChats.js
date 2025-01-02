@@ -64,7 +64,7 @@ function renderConversation(conversation) {
 
             const img = document.createElement("img");
             img.classList.add("main", "chat", "group", "messages", "pfp", "bw-icon", msgObj.sender === null ? "sent" : "received");
-            img.src = "/public/account.png";
+            img.src = "account.png";
 
             textDiv = document.createElement("div");
             textDiv.classList.add("main", "chat", "group", "messages", "texts", msgObj.sender === null ? "sent" : "received");
