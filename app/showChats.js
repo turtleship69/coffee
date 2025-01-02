@@ -89,7 +89,7 @@ function renderConversation(conversation) {
         } else if (msgObj.mediaId) {
             const imgMedia = document.createElement("img");
             imgMedia.classList.add("main", "chat", "group", "messages", "image", msgObj.sender === null ? "sent" : "received");
-            imgMedia.src = `/public/${msgObj.mediaId}.png`; // Placeholder for media image
+            imgMedia.src = `${msgObj.mediaId}.png`; // Placeholder for media image
             textDiv.appendChild(imgMedia);
         }
 
