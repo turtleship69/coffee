@@ -28,7 +28,7 @@ body {
         width: calc(var(--current-chat-pfp-size) * 0.7);
         height: calc(var(--current-chat-pfp-size) * 0.7);
     }
-    
+
     #back {
         display: block;
         left: 0.5rem;
@@ -37,6 +37,32 @@ body {
     }
 }
 
+#main.main.hide {
+    display: none;
+}
+
+/* ===================================================== */
+.placeholder {
+    left: calc(var(--side-menu-width) + var(--chat-list-width) + 1px);
+    position: fixed;
+    height: 100%;
+    width: calc(100vw - var(--side-menu-width) - var(--chat-list-width));
+    top: 38vh;
+}
+
+@media screen and (max-width: 50rem) {
+    .placeholder {
+        display: none;
+    }
+}
+
+.placeholder * {
+    margin: auto;
+    width: fit-content;
+    text-align: center;
+}
+
+/* ===================================================== */
 #side-menu {
     height: 100vh;
     width: var(--side-menu-width);
@@ -58,7 +84,8 @@ body {
 .side-menu.icon.end {
     position: absolute;
     width: var(--side-menu-width);
-    bottom: 0.3rem; /* Pushes the element to the bottom */
+    bottom: 0.3rem;
+    /* Pushes the element to the bottom */
 }
 
 /* ===================================================== */
@@ -91,9 +118,12 @@ body {
 }
 
 #conversations {
-    flex: 1; /* This will make the #chats element take up remaining vertical space */
-    overflow-y: auto; /* This will make the #chats element scrollable vertically */
-    box-sizing: content-box; /* Add this line */
+    flex: 1;
+    /* This will make the #chats element take up remaining vertical space */
+    overflow-y: auto;
+    /* This will make the #chats element scrollable vertically */
+    box-sizing: content-box;
+    /* Add this line */
     scrollbar-width: thin;
     margin-left: 0.7rem;
 }
@@ -129,7 +159,7 @@ body {
 }
 
 .conversation.text p.preview {
-    overflow: hidden;    
+    overflow: hidden;
     text-overflow: ellipsis;
     word-break: normal;
     white-space: nowrap;
@@ -148,7 +178,8 @@ body {
     width: calc(100vw - var(--side-menu-width) - var(--chat-list-width));
 }
 
-#heading, #messageBar {
+#heading,
+#messageBar {
     border: 2px solid rgba(128, 128, 128, 0.5);
     box-sizing: border-box;
     width: calc(100%);
@@ -202,7 +233,8 @@ div.topbar.search {
     position: absolute;
 }
 
-.emoji, .send {
+.emoji,
+.send {
     width: var(--button-size);
     height: var(--button-size);
 }
@@ -240,12 +272,13 @@ input.messageBox {
 }
 
 input.messageBox:hover {
-    border: 1px solid rgba(128, 128, 128, 0.9); 
-    background-color: rgba(128, 128, 128, 0.1); 
+    border: 1px solid rgba(128, 128, 128, 0.9);
+    background-color: rgba(128, 128, 128, 0.1);
 }
 
-input.messageBox:focus, input.messageBox:focus-visible {
-    border: 1px solid rgba(128, 128, 128, 0.9); 
+input.messageBox:focus,
+input.messageBox:focus-visible {
+    border: 1px solid rgba(128, 128, 128, 0.9);
 }
 
 div.send#send {
@@ -327,6 +360,7 @@ img.main.chat.group.messages.images {
 p.group.messages.sent {
     background-color: rebeccapurple;
 }
+
 img.group.messages.sent.image {
     padding: 7px;
     background-color: rebeccapurple;
@@ -335,6 +369,7 @@ img.group.messages.sent.image {
 p.group.messages.received {
     background-color: hotpink;
 }
+
 img.group.messages.received.image {
     padding: 7px;
     background-color: hotpink;

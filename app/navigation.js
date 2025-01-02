@@ -1,13 +1,11 @@
 function hideChat() {
     document.getElementById("main").classList.add("hide");
     document.getElementById("conversationlist").classList.remove("hide");
-    console.log("hide");
 }
 
-function loadChat(event) {
+function showChat(event) {
     document.getElementById("main").classList.remove("hide");
     document.getElementById("conversationlist").classList.add("hide");
-    console.log("show");
-    console.log(event.currentTarget.id);
-    //todo: load chat messages
+
+    document.getElementById("placeholder").style.display = "none";
 }

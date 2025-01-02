@@ -15,7 +15,8 @@
     <script src="emoji.js" type="module"></script>
     <script src="navigation.js" defer></script>
     <script src="loadChats.js" defer></script>
-    <link as="fetch" crossorigin="anonymous" href="/chatlist.json" rel="preload" type="application/json"/>
+    <script src="showChats.js" defer></script>
+    <link as="fetch" crossorigin="anonymous" href="../chatlist.json" rel="preload" type="application/json" />
 </head>
 
 <body>
@@ -47,7 +48,7 @@
 
     </div>
 
-    <div class="conversationlist hide" id="conversationlist">
+    <div class="conversationlist" id="conversationlist">
         <p class="conversationlist title" id="conversationsHeading">
             Chats
         </p>
@@ -57,7 +58,7 @@
         </div>
     </div>
 
-    <div class="main" id="main">
+    <div class="main hide" id="main">
         <div class="main topbar" id="heading">
             <div class="main topbar back" id="back">
                 <img class="main topbar back bw-icon" src="/public/back.png">
@@ -68,7 +69,7 @@
             </div>
 
             <div class="main topbar name">
-                <p class="main topbar name">
+                <p class="main topbar name" id="name">
                     Alex Jordon
                 </p>
             </div>
@@ -79,196 +80,215 @@
         </div>
 
         <div class="main chat" id="texts">
-            <div class="main chat group time parent">
-                <p class="main chat group time">22 May 2024, 21:12</p>
-            </div>
-
-            <div class="main chat group sent messages parent">
-                <img class="main chat group sent messages pfp bw-icon" src="/public/account.png">
-                <div class="main chat group sent messages texts">
-                    <p class="main chat group sent messages message">Morning, Alex! Did you get the chance to check out
-                        the design mockups I sent over last night?</p>
+            <div>
+                <div class="main chat group time parent">
+                    <p class="main chat group time">22 May 2024, 21:12</p>
                 </div>
-            </div>
 
-            <div class="main chat group received messages parent">
-                <img class="main chat group received messages pfp bw-icon" src="/public/account.png">
-                <div class="main chat group received messages texts">
-                    <p class="main chat group received messages message">Good morning!</p>
-                    <p class="main chat group received messages message">Yes, I did. The layouts look clean and the
-                        color scheme is spot on.</p>
-                    <p class="main chat group received messages message">I especially liked the dashboard design. Did
-                        you create that from scratch?</p>
+                <div class="main chat group sent messages parent">
+                    <img class="main chat group sent messages pfp bw-icon" src="/public/account.png">
+                    <div class="main chat group sent messages texts">
+                        <p class="main chat group sent messages message">Morning, Alex! Did you get the chance to check
+                            out
+                            the design mockups I sent over last night?</p>
+                    </div>
                 </div>
-            </div>
 
-            <!-- User's message -->
-            <div class="main chat group sent messages parent">
-                <img class="main chat group sent messages pfp bw-icon" src="/public/account.png">
-                <div class="main chat group sent messages texts">
-                    <p class="main chat group sent messages message">Thanks! Yeah, I started from a template but ended
-                        up customizing most of it. I’m glad you liked it!</p>
+                <div class="main chat group received messages parent">
+                    <img class="main chat group received messages pfp bw-icon" src="/public/account.png">
+                    <div class="main chat group received messages texts">
+                        <p class="main chat group received messages message">Good morning!</p>
+                        <p class="main chat group received messages message">Yes, I did. The layouts look clean and the
+                            color scheme is spot on.</p>
+                        <p class="main chat group received messages message">I especially liked the dashboard design.
+                            Did
+                            you create that from scratch?</p>
+                    </div>
                 </div>
-            </div>
 
-            <!-- Alex's message -->
-            <div class="main chat group received messages parent">
-                <img class="main chat group received messages pfp bw-icon" src="/public/account.png">
-                <div class="main chat group received messages texts">
-                    <p class="main chat group received messages message">Definitely. I think it’ll work well for the
-                        presentation.</p>
+                <!-- User's message -->
+                <div class="main chat group sent messages parent">
+                    <img class="main chat group sent messages pfp bw-icon" src="/public/account.png">
+                    <div class="main chat group sent messages texts">
+                        <p class="main chat group sent messages message">Thanks! Yeah, I started from a template but
+                            ended
+                            up customizing most of it. I’m glad you liked it!</p>
+                    </div>
                 </div>
-            </div>
 
-            <!-- User's message -->
-            <div class="main chat group sent messages parent">
-                <img class="main chat group sent messages pfp bw-icon" src="/public/account.png">
-                <div class="main chat group sent messages texts">
-                    <p class="main chat group sent messages message">I’m also thinking about adding a section on user
-                        feedback. What do you think?</p>
+                <!-- Alex's message -->
+                <div class="main chat group received messages parent">
+                    <img class="main chat group received messages pfp bw-icon" src="/public/account.png">
+                    <div class="main chat group received messages texts">
+                        <p class="main chat group received messages message">Definitely. I think it’ll work well for the
+                            presentation.</p>
+                    </div>
                 </div>
-            </div>
 
-            <!-- Alex's message -->
-            <div class="main chat group received messages parent">
-                <img class="main chat group received messages pfp bw-icon" src="/public/account.png">
-                <div class="main chat group received messages texts">
-                    <p class="main chat group received messages message">That’s a great idea. It’ll make the report more
-                        comprehensive.</p>
-                    <p class="main chat group received messages message">By the way, here’s a quick screenshot of the
-                        latest data analysis I ran this morning.</p>
-                    <img class="main chat group received messages image" src="/public/placeholder.png"
-                        alt="Data chart image">
+                <!-- User's message -->
+                <div class="main chat group sent messages parent">
+                    <img class="main chat group sent messages pfp bw-icon" src="/public/account.png">
+                    <div class="main chat group sent messages texts">
+                        <p class="main chat group sent messages message">I’m also thinking about adding a section on
+                            user
+                            feedback. What do you think?</p>
+                    </div>
                 </div>
-            </div>
 
-            <!-- User's message -->
-            <div class="main chat group sent messages parent">
-                <img class="main chat group sent messages pfp bw-icon" src="/public/account.png">
-                <div class="main chat group sent messages texts">
-                    <p class="main chat group sent messages message">The analysis looks solid. It really highlights the
-                        key trends.</p>
+                <!-- Alex's message -->
+                <div class="main chat group received messages parent">
+                    <img class="main chat group received messages pfp bw-icon" src="/public/account.png">
+                    <div class="main chat group received messages texts">
+                        <p class="main chat group received messages message">That’s a great idea. It’ll make the report
+                            more
+                            comprehensive.</p>
+                        <p class="main chat group received messages message">By the way, here’s a quick screenshot of
+                            the
+                            latest data analysis I ran this morning.</p>
+                        <img class="main chat group received messages image" src="/public/placeholder.png"
+                            alt="Data chart image">
+                    </div>
                 </div>
-            </div>
 
-            <!-- Alex's message -->
-            <div class="main chat group received messages parent">
-                <img class="main chat group received messages pfp bw-icon" src="/public/account.png">
-                <div class="main chat group received messages texts">
-                    <p class="main chat group received messages message">Glad you think so. I’ll incorporate this into
-                        the final report. Anything else you think we should include?</p>
+                <!-- User's message -->
+                <div class="main chat group sent messages parent">
+                    <img class="main chat group sent messages pfp bw-icon" src="/public/account.png">
+                    <div class="main chat group sent messages texts">
+                        <p class="main chat group sent messages message">The analysis looks solid. It really highlights
+                            the
+                            key trends.</p>
+                    </div>
                 </div>
-            </div>
 
-            <!-- User's message -->
-            <div class="main chat group sent messages parent">
-                <img class="main chat group sent messages pfp bw-icon" src="/public/account.png">
-                <div class="main chat group sent messages texts">
-                    <p class="main chat group sent messages message">Maybe just a brief summary of the key findings at
-                        the end. That should tie everything together nicely.</p>
+                <!-- Alex's message -->
+                <div class="main chat group received messages parent">
+                    <img class="main chat group received messages pfp bw-icon" src="/public/account.png">
+                    <div class="main chat group received messages texts">
+                        <p class="main chat group received messages message">Glad you think so. I’ll incorporate this
+                            into
+                            the final report. Anything else you think we should include?</p>
+                    </div>
                 </div>
-            </div>
 
-            <!-- Alex's message -->
-            <div class="main chat group received messages parent">
-                <img class="main chat group received messages pfp bw-icon" src="/public/account.png">
-                <div class="main chat group received messages texts">
-                    <p class="main chat group received messages message">Good point. I’ll add that in.</p>
+                <!-- User's message -->
+                <div class="main chat group sent messages parent">
+                    <img class="main chat group sent messages pfp bw-icon" src="/public/account.png">
+                    <div class="main chat group sent messages texts">
+                        <p class="main chat group sent messages message">Maybe just a brief summary of the key findings
+                            at
+                            the end. That should tie everything together nicely.</p>
+                    </div>
                 </div>
-            </div>
 
-            <!-- User's message -->
-            <div class="main chat group sent messages parent">
-                <img class="main chat group sent messages pfp bw-icon" src="/public/account.png">
-                <div class="main chat group sent messages texts">
-                    <p class="main chat group sent messages message">Perfect. How much more do you have left?</p>
+                <!-- Alex's message -->
+                <div class="main chat group received messages parent">
+                    <img class="main chat group received messages pfp bw-icon" src="/public/account.png">
+                    <div class="main chat group received messages texts">
+                        <p class="main chat group received messages message">Good point. I’ll add that in.</p>
+                    </div>
                 </div>
-            </div>
 
-            <!-- Alex's message -->
-            <div class="main chat group received messages parent">
-                <img class="main chat group received messages pfp bw-icon" src="/public/account.png">
-                <div class="main chat group received messages texts">
-                    <p class="main chat group received messages message">I’m almost done. Just need to fine-tune a few
-                        things.</p>
+                <!-- User's message -->
+                <div class="main chat group sent messages parent">
+                    <img class="main chat group sent messages pfp bw-icon" src="/public/account.png">
+                    <div class="main chat group sent messages texts">
+                        <p class="main chat group sent messages message">Perfect. How much more do you have left?</p>
+                    </div>
                 </div>
-            </div>
 
-            <div class="main chat group time parent">
-                <p class="main chat group time">6 Jun 2024, 17:52</p>
-            </div>
-
-            <!-- User's message -->
-            <div class="main chat group sent messages parent">
-                <img class="main chat group sent messages pfp bw-icon" src="/public/account.png">
-                <div class="main chat group sent messages texts">
-                    <p class="main chat group sent messages message">Hey Alex, how's everything going with the project?
-                    </p>
+                <!-- Alex's message -->
+                <div class="main chat group received messages parent">
+                    <img class="main chat group received messages pfp bw-icon" src="/public/account.png">
+                    <div class="main chat group received messages texts">
+                        <p class="main chat group received messages message">I’m almost done. Just need to fine-tune a
+                            few
+                            things.</p>
+                    </div>
                 </div>
-            </div>
 
-            <!-- Alex's message -->
-            <div class="main chat group received messages parent">
-                <img class="main chat group received messages pfp bw-icon" src="/public/account.png">
-                <div class="main chat group received messages texts">
-                    <p class="main chat group received messages message">Hey! It’s been a busy day, but I'm making good
-                        progress.</p>
+                <div class="main chat group time parent">
+                    <p class="main chat group time">6 Jun 2024, 17:52</p>
                 </div>
-            </div>
 
-            <!-- User's message -->
-            <div class="main chat group sent messages parent">
-                <img class="main chat group sent messages pfp bw-icon" src="/public/account.png">
-                <div class="main chat group sent messages texts">
-                    <p class="main chat group sent messages message">That’s great to hear. Did you manage to get the
-                        data from the client?</p>
+                <!-- User's message -->
+                <div class="main chat group sent messages parent">
+                    <img class="main chat group sent messages pfp bw-icon" src="/public/account.png">
+                    <div class="main chat group sent messages texts">
+                        <p class="main chat group sent messages message">Hey Alex, how's everything going with the
+                            project?
+                        </p>
+                    </div>
                 </div>
-            </div>
 
-            <!-- Alex's message -->
-            <div class="main chat group received messages parent">
-                <img class="main chat group received messages pfp bw-icon" src="/public/account.png">
-                <div class="main chat group received messages texts">
-                    <p class="main chat group received messages message">Yes, I received it this morning. It was a bit
-                        messy, but I cleaned it up and integrated it into the report.</p>
+                <!-- Alex's message -->
+                <div class="main chat group received messages parent">
+                    <img class="main chat group received messages pfp bw-icon" src="/public/account.png">
+                    <div class="main chat group received messages texts">
+                        <p class="main chat group received messages message">Hey! It’s been a busy day, but I'm making
+                            good
+                            progress.</p>
+                    </div>
                 </div>
-            </div>
 
-            <!-- User's message -->
-            <div class="main chat group sent messages parent">
-                <img class="main chat group sent messages pfp bw-icon" src="/public/account.png">
-                <div class="main chat group sent messages texts">
-                    <p class="main chat group sent messages message">Awesome! Do you need any help with the analysis?
-                    </p>
+                <!-- User's message -->
+                <div class="main chat group sent messages parent">
+                    <img class="main chat group sent messages pfp bw-icon" src="/public/account.png">
+                    <div class="main chat group sent messages texts">
+                        <p class="main chat group sent messages message">That’s great to hear. Did you manage to get the
+                            data from the client?</p>
+                    </div>
                 </div>
-            </div>
 
-            <!-- Alex's message -->
-            <div class="main chat group received messages parent">
-                <img class="main chat group received messages pfp bw-icon" src="/public/account.png">
-                <div class="main chat group received messages texts">
-                    <p class="main chat group received messages message">Thanks for the offer, but I think I've got it
-                        covered. I’m almost done with everything.</p>
+                <!-- Alex's message -->
+                <div class="main chat group received messages parent">
+                    <img class="main chat group received messages pfp bw-icon" src="/public/account.png">
+                    <div class="main chat group received messages texts">
+                        <p class="main chat group received messages message">Yes, I received it this morning. It was a
+                            bit
+                            messy, but I cleaned it up and integrated it into the report.</p>
+                    </div>
                 </div>
-            </div>
 
-            <!-- User's message -->
-            <div class="main chat group sent messages parent">
-                <img class="main chat group sent messages pfp bw-icon" src="/public/account.png">
-                <div class="main chat group sent messages texts">
-                    <p class="main chat group sent messages message">Sounds good. When do you think it’ll be ready?</p>
+                <!-- User's message -->
+                <div class="main chat group sent messages parent">
+                    <img class="main chat group sent messages pfp bw-icon" src="/public/account.png">
+                    <div class="main chat group sent messages texts">
+                        <p class="main chat group sent messages message">Awesome! Do you need any help with the
+                            analysis?
+                        </p>
+                    </div>
                 </div>
-            </div>
 
-            <!-- Alex's message -->
-            <div class="main chat group received messages parent">
-                <img class="main chat group received messages pfp bw-icon" src="/public/account.png">
-                <div class="main chat group received messages texts">
-                    <p class="main chat group received messages message">Actually, I just finished the report. Do you
-                        want to review it before sending?</p>
+                <!-- Alex's message -->
+                <div class="main chat group received messages parent">
+                    <img class="main chat group received messages pfp bw-icon" src="/public/account.png">
+                    <div class="main chat group received messages texts">
+                        <p class="main chat group received messages message">Thanks for the offer, but I think I've got
+                            it
+                            covered. I’m almost done with everything.</p>
+                    </div>
                 </div>
-            </div>
 
+                <!-- User's message -->
+                <div class="main chat group sent messages parent">
+                    <img class="main chat group sent messages pfp bw-icon" src="/public/account.png">
+                    <div class="main chat group sent messages texts">
+                        <p class="main chat group sent messages message">Sounds good. When do you think it’ll be ready?
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Alex's message -->
+                <div class="main chat group received messages parent">
+                    <img class="main chat group received messages pfp bw-icon" src="/public/account.png">
+                    <div class="main chat group received messages texts">
+                        <p class="main chat group received messages message">Actually, I just finished the report. Do
+                            you
+                            want to review it before sending?</p>
+                    </div>
+                </div>
+
+            </div>
         </div>
 
         <div class="main messageBar" id="messageBar">
@@ -290,5 +310,10 @@
         </div>
     </div>
 
+    <div class="main placeholder" id="placeholder">
+        <h1>Welcome to the Café</h1>
+        <p>Click on a contact to view your messages.</p>
+    </div>
 </body>
+
 </html>

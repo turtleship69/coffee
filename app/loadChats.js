@@ -52,13 +52,31 @@ function loadChatList() {
                 const conversationDiv = createConversationDiv(chat);
 
                 conversationListDiv.appendChild(conversationDiv);
+
+                conversationDiv.addEventListener("click", (event) => {
+                    // event.stopPropagation();
+
+                    fetch(`/chats/${chat.chatId}.json`)
+                    .then(response => response.json())
+                    .then(data => {
+                        const chatDiv = renderConversation(data);
+
+                        // document.getElementById("texts").innerHTML = "";
+                        document.getElementById("texts").innerHTML = "";
+                        document.getElementById("texts").appendChild(chatDiv);
+
+                        document.getElementById("name").innerText = chat.name;
+                        showChat();
+                    })
+                    .catch(error => console.error('Error loading conversation:', error));
+
+
+
+                });
             });
 
 
             document.getElementById("back").addEventListener("click", hideChat);
-            document.querySelectorAll("#conversations .conversation.parent").forEach(function (conversation) {
-                conversation.addEventListener("click", loadChat);
-            });
         })
         .catch(error => console.error('Error loading chat list:', error));
 }
