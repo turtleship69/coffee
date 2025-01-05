@@ -1,6 +1,8 @@
 function hideChat() {
     document.getElementById("main").classList.add("hide");
     document.getElementById("conversationlist").classList.remove("hide");
+
+    document.getElementById("placeholder").style.display = "block";
 }
 
 function showChat(event) {
