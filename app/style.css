@@ -23,18 +23,6 @@ body {
         --chat-list-width: 100vw;
         --side-menu-width: 0rem;
     }
-    
-    .topbar.back {
-        width: calc(var(--current-chat-pfp-size) * 0.7);
-        height: calc(var(--current-chat-pfp-size) * 0.7);
-    }
-
-    #back {
-        display: block;
-        left: 0.5rem;
-        padding-left: calc(var(--current-chat-pfp-size) * 0.25);
-        padding-right: -calc(var(--current-chat-pfp-size) * 0.25);
-    }
 }
 
 #main.main.hide {
@@ -150,7 +138,7 @@ body {
     margin-top: 2px;
     margin-bottom: 2px;
     overflow: hidden;
-    height: 1.4em;
+    height: 1.5em;
     width: calc(var(--chat-list-width) - var(--chat-list-pfp-size) - 2.5rem);
 }
 
@@ -193,8 +181,16 @@ body {
     position: relative;
 }
 
-div.topbar.back {
-    display: none;
+.topbar.back {
+    width: calc(var(--current-chat-pfp-size) * 0.7);
+    height: calc(var(--current-chat-pfp-size) * 0.7);
+}
+
+#back {
+    display: block;
+    left: 0.5rem;
+    padding-left: calc(var(--current-chat-pfp-size) * 0.25);
+    padding-right: -calc(var(--current-chat-pfp-size) * 0.25);
 }
 
 .topbar.pfp {
