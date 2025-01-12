@@ -1,7 +1,7 @@
 body {
     margin: 0;
 
-    --side-menu-width: 3rem;
+    --side-menu-width: 3.8rem;
     --chat-list-width: 25rem;
     --chat-list-pfp-size: 3.3rem;
     --current-chat-pfp-size: 3rem;
@@ -98,11 +98,23 @@ body {
     overflow: hidden;
 }
 
+.heading {
+    display: flex;
+}
+
 #conversationsHeading {
     font-size: xx-large;
     margin-top: 1rem;
     margin-bottom: 1rem;
     margin-left: 1.5rem;
+}
+
+#newChat {
+    position: absolute;
+    width: calc(var(--side-menu-width)* 0.7);
+    height: calc(var(--side-menu-width)* 0.7);
+    margin-top: 1.4rem;
+    right: 1rem;
 }
 
 #conversations {
