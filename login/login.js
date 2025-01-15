@@ -17,7 +17,7 @@ async function fetchData() {
     try {
         const { hanko } = await register(HANKO_URL, { translations: { en } });
 
-        hanko.onAuthFlowCompleted(async () => {
+        hanko.onSessionCreated(async () => {
             // successfully logged in, make a request to "/api/login"
             const response = await fetch(login_url);
             const data = await response.json();
