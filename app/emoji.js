@@ -10,11 +10,11 @@ document.querySelector('#emoji').onclick = () => {
     document.removeEventListener("keydown", event)
 }
 
-document.addEventListener("keydown", (event) => {
-    if (event.key === "Escape") {
-        tooltip.classList.remove("shown");
-    }
-});
+// document.addEventListener("keydown", (event) => {
+//     if (event.key === "Escape") {
+//         tooltip.classList.remove("shown");
+//     }
+// });
 
 document.querySelector('emoji-picker').addEventListener('emoji-click', e => {
     insertText(document.querySelector('input'), e.detail.unicode)

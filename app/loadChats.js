@@ -77,6 +77,12 @@ function loadChatList() {
 
 
             document.getElementById("back").addEventListener("click", hideChat);
+            //add event listener to esc
+            document.addEventListener("keydown", (event) => {
+                if (event.key === "Escape") {
+                    hideChat();
+                }
+            });
         })
         .catch(error => console.error('Error loading chat list:', error));
 }
