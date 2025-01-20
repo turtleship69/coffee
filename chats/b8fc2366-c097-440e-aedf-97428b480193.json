@@ -46,7 +46,7 @@
     },
     {
         "sender": "Alex",
-        "message": "http://localhost/public/placeholder.png",
+        "message": "/public/placeholder.png",
         "time": 1716413400
     },
     {
