@@ -81,15 +81,15 @@ function renderConversation(conversation) {
         // }
 
         // Add the message or media to the current message group
-        if (msgObj.message) {
+        if (!/^https?:\/\/\S+$/.test(msgObj.message)) {
             const p = document.createElement("p");
             p.classList.add("main", "chat", "group", "messages", "message", msgObj.sender === null ? "sent" : "received");
             p.textContent = msgObj.message;
             textDiv.appendChild(p);
-        } else if (msgObj.mediaId) {
+        } else {
             const imgMedia = document.createElement("img");
             imgMedia.classList.add("main", "chat", "group", "messages", "image", msgObj.sender === null ? "sent" : "received");
-            imgMedia.src = `${msgObj.mediaId}.png`; // Placeholder for media image
+            imgMedia.src = msgObj.message; // Placeholder for media image
             textDiv.appendChild(imgMedia);
         }
 
