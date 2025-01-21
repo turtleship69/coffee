@@ -398,3 +398,26 @@ img.group.messages.received.image {
 div.main.chat.group.received.parent:last-child {
     margin-bottom: 0.6rem;
 }
+
+emoji-picker {
+    position: relative;
+    z-index: 20;
+    left: -2rem;
+}
+
+#emoji-background.emoji-background {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translateY(-40%);
+    width: 130vw;
+    height: 130vh;
+    z-index: 10;
+
+    /* background-color: blue; */
+
+    /* bottom: 0; */
+    /* left: 0; */
+    /* padding: 0;
+    margin: 0; */
+}
