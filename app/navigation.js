@@ -5,7 +5,7 @@ function hideChat() {
     document.getElementById("placeholder").style.display = "block";
 }
 
-function showChat(event) {
+function showChat() {
     document.getElementById("main").classList.remove("hide");
     document.getElementById("conversationlist").classList.add("hide");
 
