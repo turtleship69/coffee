@@ -7,9 +7,9 @@ document.querySelector('#emoji').onclick = () => {
     // document.removeEventListener("keydown", event)
 }
 
-document.querySelector("#emoji-background").onclick = () => {
-    tooltip.classList.remove("shown");
-}
+// document.querySelector("#emoji-background").onclick = () => {
+//     tooltip.classList.remove("shown");
+// }
 
 // document.addEventListener("keydown", (event) => {
 //     if (event.key === "Escape") {
