@@ -40,6 +40,8 @@ function createConversationDiv(chat) {
     return conversationDiv;
 }
 
+let current_room;
+
 function loadChatList() {
     // Make a request to /chatlist.json
     fetch('/chatlist.json')
@@ -60,14 +62,19 @@ function loadChatList() {
                     fetch(`/chats/${chat.chatId}.json`)
                     .then(response => response.json())
                     .then(data => {
+                        current_room = chat.chatId;
+
                         const chatDiv = renderConversation(data);
 
                         // document.getElementById("texts").innerHTML = "";
                         document.getElementById("texts").innerHTML = "";
                         document.getElementById("texts").appendChild(chatDiv);
-
                         document.getElementById("name").innerText = chat.name;
+                        
                         showChat();
+
+
+                        connect_to_chat(chat.chatId);
                     })
                     .catch(error => console.error('Error loading conversation:', error));
 

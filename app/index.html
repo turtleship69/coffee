@@ -16,7 +16,13 @@
         import { polyfillCountryFlagEmojis } from "https://cdn.skypack.dev/country-flag-emoji-polyfill";
         polyfillCountryFlagEmojis('Twemoji Mozilla');
     </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.8.1/socket.io.min.js"
+        integrity="sha384-mkQ3/7FUtcGyoppY6bz/PORYoGqOl7/aSUMn2ymDOJcapfS6PHqxhRTMh1RR0Q6+"
+        crossorigin="anonymous"></script>
     <script src="emoji.js" type="module"></script>
+    <script src="/scripts/cookies.js" defer></script>
+    <script src="connect.js" defer></script>
+    <script src="sendMessage.js" defer></script>
     <script src="navigation.js" defer></script>
     <script src="loadChats.js" defer></script>
     <script src="showChats.js" defer></script>
@@ -314,11 +320,14 @@
             </div>
 
             <div class="main messageBar messageBox" id="message">
-                <input class="main messageBar messageBox">
+                <form onsubmit="submitMessage(event)" autocomplete="off">
+                    <input class="main messageBar messageBox" id="messageBox" autofocus>
+                </form>
             </div>
 
             <div class="main messageBar send" id="send">
-                <img class="main messageBar send bw-icon button-img" src="/public/send.png" alt="send message">
+                <input onclick="submitMessage(event)" type="image" name="submit"
+                    class="main messageBar send bw-icon button-img" src="/public/send.png" alt="send message">
             </div>
         </div>
     </div>

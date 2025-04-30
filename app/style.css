@@ -328,6 +328,8 @@ div.group {
 .chat.group.pfp {
     width: var(--in-chat-pfp-size);
     height: var(--in-chat-pfp-size);
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 div.messages {
@@ -335,8 +337,13 @@ div.messages {
 }
 
 div.chat.group.texts {
+    display: flex;
     margin-left: 0.3rem;
     margin-right: 0.3rem;
+}
+
+div.chat.group.texts.sent {
+    align-items: flex-end;
 }
 
 div.chat.group.sent.parent {
@@ -414,15 +421,9 @@ emoji-picker {
     position: absolute;
     top: 0;
     right: 0;
-    transform: translateY(-40%);
-    width: 130vw;
-    height: 130vh;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
     z-index: 10;
-
-    /* background-color: blue; */
-
-    /* bottom: 0; */
-    /* left: 0; */
-    /* padding: 0;
-    margin: 0; */
 }
