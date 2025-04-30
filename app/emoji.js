@@ -7,10 +7,11 @@ document.querySelector('#emoji').onclick = () => {
     // document.removeEventListener("keydown", event)
 }
 
-// document.querySelector("#emoji-background").onclick = () => {
-//     tooltip.classList.remove("shown");
-// }
+document.querySelector("#emoji-background").onclick = () => {
+    tooltip.classList.remove("shown");
+}
 
+//todo: prevent closing chat when emoji picker open
 // document.addEventListener("keydown", (event) => {
 //     if (event.key === "Escape") {
 //         tooltip.classList.remove("shown");

@@ -30,6 +30,11 @@ body {
 }
 
 /* ===================================================== */
+button.emoji {
+    font-family: 'Twemoji Country Flags', var(--emoji-font-family) !important;
+}
+
+/* ===================================================== */
 .placeholder {
     left: calc(var(--side-menu-width) + var(--chat-list-width) + 1px);
     position: fixed;

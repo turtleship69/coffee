@@ -14,6 +14,6 @@
     justify-self: center;
 }
 
-p, h1, h2, h3, h4, h5, h6, input, span, div {
-    font-family: 'Coming Soon', 'Comic Sans MS', 'Comic Sans', 'Chalkboard SE', 'Comic Neue', sans-serif;
+button, p, h1, h2, h3, h4, h5, h6, input, span, div {
+    font-family: 'Twemoji Country Flags', 'Coming Soon', 'Comic Sans MS', 'Comic Sans', 'Chalkboard SE', 'Comic Neue', sans-serif;
 }

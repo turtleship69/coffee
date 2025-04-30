@@ -12,6 +12,10 @@
     <link rel="stylesheet" href="/styles/darkmode.css">
     <link rel="stylesheet" href="/styles/defaults.css">
     <script type="module" src="https://cdn.jsdelivr.net/npm/emoji-picker-element@^1/index.js"></script>
+    <script type="module" defer>
+        import { polyfillCountryFlagEmojis } from "https://cdn.skypack.dev/country-flag-emoji-polyfill";
+        polyfillCountryFlagEmojis('Twemoji Mozilla');
+    </script>
     <script src="emoji.js" type="module"></script>
     <script src="navigation.js" defer></script>
     <script src="loadChats.js" defer></script>
@@ -303,9 +307,9 @@
             </div>
 
             <div class="tooltip" id="emoji-picker" role="tooltip">
-                <!-- <div>
+                <div>
                     <div class="emoji-background" id="emoji-background"></div>
-                </div> -->
+                </div>
                 <emoji-picker></emoji-picker>
             </div>
 
