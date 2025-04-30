@@ -24,6 +24,8 @@ async function fetchData() {
 
             // check if the status in the returned JSON is "success"
             if (data.status === "success") {
+                setCookie("session_id", data.session_id, 365); // Set the session cookie for 1 year
+                console.log("Session_id cookie set:", data.session_id);
                 document.location.href = data.redirect_url
             }
         });
