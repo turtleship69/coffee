@@ -6,7 +6,7 @@ with open('login/hanko.js', 'w') as f:
 
 
 live_url = os.environ.get('SOCKET_URL', 'window.location.host')
-with open('login/socket.js', 'w') as f:
+with open('app/socket.js', 'w') as f:
     f.write(f'let live_server_url = {live_url};')
 
 
