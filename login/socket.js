@@ -1,0 +1,1 @@
+let live_server_url = window.location.host;
