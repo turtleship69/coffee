@@ -5,7 +5,6 @@ import { en } from "https://esm.run/@teamhanko/hanko-elements/i18n/en";
 en.texts.setupPasskey = "Your credentials will be stored securely on your device for faster login next time."
 
 var login_url = "/auth"
-var HANKO_URL = "https://e3c4803f-48cc-4b62-9ac5-2aa02444ba51.hanko.io"
 
 const redirect_url = new URLSearchParams(window.location.search).get('redirect_url')
 if (redirect_url) {
