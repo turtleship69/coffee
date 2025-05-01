@@ -4,7 +4,7 @@ function send_message_to_server(message, room) { }
 
 session = getCookie("session_id");
 
-const socket = io(window.location.host, {
+const socket = io(live_server_url, {
     auth: {
         token: session
     },
