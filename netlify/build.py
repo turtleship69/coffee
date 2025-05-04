@@ -11,7 +11,7 @@ with open('app/live_server_url.js', 'w') as f:
 
 
 #define url rewrite rules
-redirects = ["auth", "connect", "update_profile", "chatlist.json", "chats"]
+redirects = ["auth", "connect", "update_profile", "chatlist.json", "chats", "new_chat"]
 netlify = ""
 
 for redirect in redirects:

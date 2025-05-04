@@ -1,3 +1,6 @@
+// Select the parent div where the conversation will be appended
+const conversationListDiv = document.getElementById('conversations');
+
 function createConversationDiv(chat) {
     // Create the parent div for each conversation
     const conversationDiv = document.createElement('div');
@@ -7,6 +10,7 @@ function createConversationDiv(chat) {
     // Create the image element
     const img = document.createElement('img');
     img.classList.add('conversationlist', 'conversations', 'conversation', 'pfp', 'bw-icon');
+    console.log(chat.pfp);
     img.src = chat.pfp;
     img.alt = 'profile picture';
 
@@ -25,7 +29,7 @@ function createConversationDiv(chat) {
 
     // Determine the sender and message format
     const senderName = chat.lastChat[0].sender === null ? "You" : chat.lastChat[0].sender;
-    const messagePreview = `${senderName}: ${chat.lastChat[0].message}`;
+    const messagePreview = chat.lastChat[0].message === null ? "New Chat" : `${senderName}: ${chat.lastChat[0].message}`;
     previewP.textContent = messagePreview;
 
     // Append the name and preview to the text div
@@ -35,6 +39,30 @@ function createConversationDiv(chat) {
     // Append the image and text divs to the parent div
     conversationDiv.appendChild(img);
     conversationDiv.appendChild(textDiv);
+
+
+    conversationDiv.addEventListener("click", (event) => {
+        // event.stopPropagation();
+
+        fetch(`/chats/${chat.chatId}.json`)
+            .then(response => response.json())
+            .then(data => {
+                current_room = chat.chatId;
+
+                const chatDiv = renderConversation(data);
+
+                // document.getElementById("texts").innerHTML = "";
+                document.getElementById("texts").innerHTML = "";
+                document.getElementById("texts").appendChild(chatDiv);
+                document.getElementById("name").innerText = chat.name;
+
+                showChat();
+
+
+                connect_to_chat(chat.chatId);
+            })
+            .catch(error => console.error('Error loading conversation:', error));
+    });
 
     // Return the generated div
     return conversationDiv;
@@ -47,40 +75,13 @@ function loadChatList() {
     fetch('/chatlist.json')
         .then(response => response.json())
         .then(data => {
-            // Select the parent div where the conversation will be appended
-            const conversationListDiv = document.getElementById('conversations');
-
             // Loop through each chat item in the response
             data.forEach(chat => {
                 const conversationDiv = createConversationDiv(chat);
 
                 conversationListDiv.appendChild(conversationDiv);
 
-                conversationDiv.addEventListener("click", (event) => {
-                    // event.stopPropagation();
 
-                    fetch(`/chats/${chat.chatId}.json`)
-                    .then(response => response.json())
-                    .then(data => {
-                        current_room = chat.chatId;
-
-                        const chatDiv = renderConversation(data);
-
-                        // document.getElementById("texts").innerHTML = "";
-                        document.getElementById("texts").innerHTML = "";
-                        document.getElementById("texts").appendChild(chatDiv);
-                        document.getElementById("name").innerText = chat.name;
-                        
-                        showChat();
-
-
-                        connect_to_chat(chat.chatId);
-                    })
-                    .catch(error => console.error('Error loading conversation:', error));
-
-
-
-                });
             });
 
 
