@@ -17,8 +17,8 @@ netlify = ""
 for redirect in redirects:
     netlify += f"""
 [[redirects]]
-from = "/{redirect}*"
-to = "{os.environ.get("BACKEND_URL")}/{redirect}:splat"
+from = "/{redirect}/*"
+to = "{os.environ.get("BACKEND_URL")}/{redirect}/:splat"
 status = 200
 force = true
 """
