@@ -9,7 +9,7 @@ function createConversationDiv(chat) {
 
     // Create the image element
     const img = document.createElement('img');
-    img.classList.add('conversationlist', 'conversations', 'conversation', 'pfp', 'bw-icon');
+    img.classList.add('conversationlist', 'conversations', 'conversation', 'pfp');
     console.log(chat.pfp);
     img.src = chat.pfp;
     img.alt = 'profile picture';
