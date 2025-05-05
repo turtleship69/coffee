@@ -73,15 +73,29 @@ let current_room;
 function loadChatList() {
     // Make a request to /chatlist.json
     fetch('/chatlist.json')
-        .then(response => response.json())
+        .then(response => {
+            if (!response.ok) {
+                // Check if the response status is 401
+                if (response.status === 401) {
+                    return response.json().then(errorData => {
+                        // Check for specific error types
+                        console.log(errorData);
+                        if (errorData.error === 'notOnboarded' || errorData.error === 'unauthenticated') {
+                            // Redirect the user to the provided URL
+                            window.location.href = errorData.redirect_url;
+                        }
+                        throw new Error('Unauthorized access');
+                    });
+                }
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+            return response.json();
+        })
         .then(data => {
             // Loop through each chat item in the response
             data.forEach(chat => {
                 const conversationDiv = createConversationDiv(chat);
-
                 conversationListDiv.appendChild(conversationDiv);
-
-
             });
 
 
