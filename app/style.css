@@ -119,8 +119,8 @@ button.emoji {
 
 #newChat {
     position: absolute;
-    width: calc(var(--side-menu-width)* 0.7);
-    height: calc(var(--side-menu-width)* 0.7);
+    width: calc(var(--current-chat-pfp-size)* 0.9);
+    height: calc(var(--current-chat-pfp-size)* 0.9);
     margin-top: 1.4rem;
     right: 1rem;
 }
