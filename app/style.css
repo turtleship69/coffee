@@ -176,6 +176,7 @@ button.emoji {
 .conversation.pfp {
     width: var(--chat-list-pfp-size);
     height: var(--chat-list-pfp-size);
+    border-radius: 50%;
 }
 
 /* ===================================================== */
